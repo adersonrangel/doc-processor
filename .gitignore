@@ -6,9 +6,7 @@
 
 # --- Environment (config / secrets) — never commit ---
 .env
-.env.*
-*.env
-!.env.example
+
 
 # --- Python (api/) ---
 __pycache__/

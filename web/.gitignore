@@ -15,5 +15,3 @@ npm-debug.log*
 
 # env files (may hold config/secrets) - never commit
 .env
-.env.local
-.env.*
