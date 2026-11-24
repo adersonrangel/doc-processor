@@ -1,0 +1,10 @@
+# doc-processor-prototype — task mirror (Engram)
+
+See full spec: odd/tasks/doc-processor-prototype.md
+
+- T1 [backend]  S1-S16  Scaffold FastAPI + Celery + Postgres + local disk + agent (deterministic/openrouter) + tests. -> gentle-ai-worker
+- T2 [frontend] S5, S8  Next.js client: upload, poll status, job list. -> gentle-ai-worker
+- T3 [integration] Parent inline: run API + worker + web; end-to-end upload -> status -> result.
+
+Status: T1 pending, T2 pending, T3 pending.
+Risk: none (new prototype; no existing contracts changed; standard patterns; inline E2E verification).
