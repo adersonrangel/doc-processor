@@ -23,9 +23,8 @@ with:
 NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
 
-> `.env.local` is intentionally not gitignored in this project (it only carries the
-> public API base URL, no secrets). It is not committed yet because the scaffold has
-> no backend-specific config.
+> `.env.local` is gitignored (env files are never committed). It is optional — the client
+> defaults to `http://localhost:8000` when the variable is not set.
 
 ## Scripts
 
