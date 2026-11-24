@@ -1,0 +1,14 @@
+# Entorno virtual y artefactos de Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Variables de entorno (contienen credenciales). Se versiona .env.example.
+.env
+
+# Archivos subidos por los usuarios (nunca van al repositorio).
+storage/
