@@ -107,6 +107,19 @@ Production-like web:
 cd web && npm run build && npm start
 ```
 
+### Optional: monitoring dashboard (Flower)
+
+Flower is a real-time web UI for the Celery cluster (workers, queue, task rates, and task
+revocation). Run it in a fourth terminal once the API and worker are up:
+
+```bash
+cd api && .venv/bin/celery -A app.worker.celery_app flower --port=5555 --address=127.0.0.1
+```
+
+Then open `http://localhost:5555`. It connects to the same Redis broker and shows the
+`process_job` tasks and any running workers. It is optional — stop it when you don't need
+the dashboard.
+
 ## API
 
 Base URL `http://localhost:8000` (CORS allows the dev client on `:3000`).

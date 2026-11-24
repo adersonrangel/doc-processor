@@ -13,6 +13,7 @@ dependencies = [
     "pydantic-settings>=2.6",
     "python-multipart>=0.0.12",
     "openrouter>=1.3.190",
+    "flower>=1.2",
 ]
 
 [project.optional-dependencies]
