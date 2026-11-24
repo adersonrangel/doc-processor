@@ -6,5 +6,6 @@ See full spec: odd/tasks/doc-processor-prototype.md
 - T2 [frontend] S5, S8  Next.js client: upload, poll status, job list. -> gentle-ai-worker
 - T3 [integration] Parent inline: run API + worker + web; end-to-end upload -> status -> result.
 
-Status: T1 pending, T2 pending, T3 pending.
+Status: T1 done, T2 done, T3 done.
+Evidence: E2E validated (upload -> ready, result=filename, 4 job_steps, disk storage, 400 error paths); 51/51 backend tests; web serves HTTP 200. Commits: 4fb7ef2, 89aedcf, 87c3d5e, 6a8f274, 3830e25.
 Risk: none (new prototype; no existing contracts changed; standard patterns; inline E2E verification).
