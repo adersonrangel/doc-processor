@@ -1,0 +1,44 @@
+# ============================================================
+# Root .gitignore — doc-processor-prototype (monorepo)
+# Safety net for the whole repo. api/ and web/ keep their own
+# .gitignore for subproject-specific rules.
+# ============================================================
+
+# --- Environment (config / secrets) — never commit ---
+.env
+.env.*
+*.env
+!.env.example
+
+# --- Python (api/) ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# --- Node / Next.js (web/) ---
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# --- Local file storage (uploaded files — never commit) ---
+storage/
+
+# --- OS / editors ---
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# --- Logs ---
+*.log
+npm-debug.log*
